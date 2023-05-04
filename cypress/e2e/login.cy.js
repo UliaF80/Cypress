@@ -9,7 +9,7 @@ describe('successful login', () => {
   })
 
   it('Login line not filled', () => {
-    cy.viewport(320, 568)
+    
     cy.login(null, 'test')
 
     cy.get('#mail')
@@ -41,7 +41,7 @@ describe('Favorites page must be empty', () => {
     cy.login('test@test.com', 'test')
 })
   it('Find a book', () => {
-    cy.viewport(1280, 800)
+    
     cy.get('.card-img').click()
     cy.get('#title').type('Kasper')
     cy.contains('Submit').click()
